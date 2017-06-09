@@ -13,6 +13,7 @@ WORKDIR /opt/
 # thingspeak SETUP
 RUN git clone https://github.com/iobridge/thingspeak.git
 WORKDIR /opt/thingspeak
+RUN gem 'sqlite3'
 RUN bundle install
 
 # DB setup

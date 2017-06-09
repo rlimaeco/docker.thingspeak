@@ -9,5 +9,7 @@ web:
   command: bundle exec rails server -p 3000
   ports:
     - "3000:3000"
+  volumes:
+    - .:/opt:Z
   links:
     - mysql
