@@ -11,9 +11,8 @@ RUN apt-get install -y build-essential libpq-dev git
 WORKDIR /opt/
 
 # thingspeak SETUP
-RUN git clone https://github.com/iobridge/thingspeak.git
+RUN git clone https://github.com/rlimaeco/thingspeak.git
 WORKDIR /opt/thingspeak
-RUN gem 'sqlite3'
 RUN bundle install
 
 # DB setup
